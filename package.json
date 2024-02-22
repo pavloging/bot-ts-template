@@ -1,0 +1,33 @@
+{
+    "name": "bot-ts-config",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "npx nodemon",
+        "build": "rimraf ./build && npx tsc",
+        "start": "npm run build && node build/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@grammyjs/types": "^3.3.0",
+        "@types/node": "^20.8.7",
+        "@types/pg": "^8.10.7",
+        "@typescript-eslint/eslint-plugin": "^6.8.0",
+        "@typescript-eslint/parser": "^6.8.0",
+        "eslint": "^8.52.0",
+        "nodemon": "^3.0.1",
+        "rimraf": "^5.0.5",
+        "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "@grammyjs/i18n": "^1.0.1",
+        "@grammyjs/ratelimiter": "^1.2.0",
+        "dotenv": "^16.3.1",
+        "grammy": "^1.19.2",
+        "pg": "^8.11.3"
+    }
+}
